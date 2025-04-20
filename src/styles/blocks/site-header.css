@@ -1,0 +1,4 @@
+/* This is an exception for the inner wrapper */
+.site-header nav[data-wrapper-type="inner"] {
+  padding-block: var(--gutter);
+}

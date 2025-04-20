@@ -1,16 +1,173 @@
 ---
+import Layout from "../layouts/Layout.astro";
 
+const pageTitle = "Résumé of Jon Coleman";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout pageTitle={pageTitle}>
+	<article class="wrapper">
+		<div class="prose flow" data-wrapper-type="inner">
+			<h1>Jon Coleman</h1>
+			<div class="subtitle flow">
+				<p>Technical Writer & Web Developer</p>
+				<p>
+					<a href="/jon-coleman-resume.pdf" download class="button"
+						>Download as PDF</a
+					>
+				</p>
+			</div>
+			<p>
+				I am a technical writer and front-end web developer. I'm
+				passionate about helping people understand complex topics, CSS,
+				and accessibility.
+			</p>
+			<nav
+				class="table-of-contents"
+				data-wrapper-type="inner"
+				aria-label="resume navigation"
+			>
+				<p>Table of contents</p>
+				<ol>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+					<li>
+						<a href="#education">Education</a>
+					</li>
+					<li>
+						<a href="#skills">Skills</a>
+					</li>
+					<li>
+						<a href="#experience">Relevant Experience</a>
+					</li>
+				</ol>
+			</nav>
+			<h2 id="contact">Contact</h2>
+			<p>
+				Email: <a href="mailto:jon@joncoleman.me">jon@joncoleman.me</a>
+			</p>
+			<p class="no-space">
+				Web: <a href="https://joncoleman.me">joncoleman.me</a>
+			</p>
+			<h2 id="education">Education</h2>
+			<p>
+				<strong
+					>Indiana University Purdue University Indianapolis</strong
+				>
+			</p>
+			<p class="no-space">Bachelor of Arts – Spanish</p>
+			<p>
+				<strong>General Assembly</strong>
+			</p>
+			<p class="no-space">JavaScript Development</p>
+			<h2 id="skills">Skills</h2>
+			<ul>
+				<li>
+					<strong>Documentation Types</strong>: Product documentation,
+					user manuals, knowledge base articles, API docs, release
+					notes
+				</li>
+				<li>
+					<strong>Writing Skills</strong>: Clear, concise writing and
+					editing for diverse audiences
+				</li>
+				<li>
+					<strong>Information Organization</strong>: User-centered
+					information architecture and Diátaxis framework
+				</li>
+				<li>
+					<strong>Processes</strong>: Agile development and
+					docs-as-code
+				</li>
+				<li>
+					<strong>Research</strong>: Cross-team collaboration, subject
+					matter expert (SME) interviews, data-driven decision making
+				</li>
+				<li>
+					<strong>Languages</strong>: HTML, CSS, SASS, JavaScript
+				</li>
+				<li>
+					<strong>Tools</strong>: Markdown, MDX, static site
+					generators, Visual Studio Code, Sublime Text, Integrated
+					Developer Environments (IDEs)
+				</li>
+				<li>
+					<strong>Frameworks</strong>: Astro, Eleventy, Next.js, React
+				</li>
+				<li>
+					<strong>Best Practices</strong>: Web accessibility (a11y),
+					responsive design
+				</li>
+				<li><strong>Version Control</strong>: Git, GitHub</li>
+				<li>
+					<strong>Command Line Tools</strong>: Bash and Z shell
+				</li>
+			</ul>
+			<h2 class="experience inverse" id="experience">
+				Relevant Experience
+			</h2>
+			<h3>Technical Writer</h3>
+			<p>Eleven Software – 2022–Present</p>
+			<ul>
+				<li>
+					Creating and maintaining user help documentation in Zendesk
+					to improve understanding and self- service capabilities for
+					partners, customers, and internal staff
+				</li>
+				<li>
+					Updating and maintaining REST API documentation in Stoplight
+					to ensure accuracy for partner developers
+				</li>
+				<li>
+					Creating UX microcopy in Figma to enhance accessibility and
+					ensure consistency across applications
+				</li>
+				<li>
+					Collaborating with User Experience to guide new feature
+					creation
+				</li>
+			</ul>
+			<h3>Technical Writer</h3>
+			<p>Bloomerang – 2020–2022</p>
+			<ul>
+				<li>
+					Developed user help resources in Freshdesk to enhance
+					knowledge sharing and empower self- service for customers
+					and internal teams
+				</li>
+				<li>
+					Maintained public facing OpenAPI documentation for
+					developers
+				</li>
+				<li>
+					Produced extensive video help documentation with Camtasia to
+					provide additional learning resources
+				</li>
+				<li>
+					Designed and delivered webinars and internal training on new
+					and complex features to improve customer and internal staff
+					knowledge
+				</li>
+			</ul>
+			<h3>Web Developer</h3>
+			<p>Kiwanis International – 2017–2018</p>
+			<ul>
+				<li>
+					Designed and developed front-end solutions in .NET projects
+					for marketing websites to improve user experience and
+					accessibility
+				</li>
+				<li>Developed a microsite to accommodate event management</li>
+				<li>
+					Implemented an internal support ticketing system with Jira
+					Service Desk for IT and Building Services to streamline
+					issue resolution
+				</li>
+				<li>
+					Mentored developers in front-end technologies to share
+					knowledge and improve overall team capacity
+				</li>
+			</ul>
+		</div>
+	</article>
+</Layout>

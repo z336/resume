@@ -1,0 +1,11 @@
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.flow h3 {
+  --flow-space: 2.5em;
+}
+
+.flow .no-space {
+  --flow-space: 0;
+}
