@@ -1,6 +1,4 @@
 .button {
-  color: var(--color-light);
-  background-color: var(--color-dark);
   text-decoration: none;
   padding-block: 0.75rem;
   padding-inline: 1rem;
