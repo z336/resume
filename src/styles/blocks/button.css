@@ -1,16 +1,16 @@
 .button {
-    text-decoration: none;
-    padding-block: 0.75rem;
-    padding-inline: 1rem;
-    border: 1px solid;
-    border-radius: 0.75rem;
-    &:hover {
-        color: var(--color-dark);
-        background-color: var(--color-light);
-    }
-    &:focus-visible {
-        z-index: calc(infinity);
-        outline: 3px solid var(--color-dark);
-        outline-offset: 3px;
-    }
+  text-decoration: none;
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+  border: 1px solid;
+  border-radius: 0.75rem;
+  &:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+  &:focus-visible {
+    z-index: calc(infinity);
+    outline: 3px solid var(--color-dark);
+    outline-offset: 3px;
+  }
 }
