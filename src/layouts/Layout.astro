@@ -4,63 +4,63 @@ const { pageTitle } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<link
-			rel="preload"
-			href="/AUTHENTICSans-90.woff"
-			as="font"
-			type="font/woff"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="preload"
-			href="/AlteHaasGroteskBold.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="preload"
-			href="/external-link.svg"
-			as="image"
-			type="image/svg+xml"
-		/>
-		<link
-			rel="preload"
-			href="/external-link-inverse.svg"
-			as="image"
-			type="image/svg+xml"
-		/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#2a2722" />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<header class="site-header inverse" id="top">
-			<div class="wrapper">
-				<nav aria-label="primary navigation" data-wrapper-type="inner">
-					<p>
-						This is the résumé of Jon Coleman. Go to <a
-							href="https://joncoleman.me/">joncoleman.me</a
-						> for content.
-					</p>
-				</nav>
-			</div>
-		</header>
-		<main id="main" tabindex="-1">
-			<slot />
-		</main>
-		<footer class="inverse">
-			<div class="wrapper">
-				<section class="flow" data-wrapper-type="inner">
-					<p>Site and words by Jon Coleman, a human.</p>
-					<p>This site is not tracking you.</p>
-					<p><a href="#top">Back to top</a></p>
-				</section>
-			</div>
-		</footer>
-	</body>
+    <head>
+        <link
+            rel="preload"
+            href="/AUTHENTICSans-90.woff"
+            as="font"
+            type="font/woff"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="/AlteHaasGroteskBold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="/external-link.svg"
+            as="image"
+            type="image/svg+xml"
+        />
+        <link
+            rel="preload"
+            href="/external-link-inverse.svg"
+            as="image"
+            type="image/svg+xml"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="theme-color" content="#2a2722" />
+        <title>{pageTitle}</title>
+    </head>
+    <body>
+        <header class="site-header inverse" id="top">
+            <div class="wrapper">
+                <nav aria-label="primary navigation" data-wrapper-type="inner">
+                    <p>
+                        This is the résumé of Jon Coleman. Go to <a
+                            href="https://joncoleman.me/">joncoleman.me</a
+                        > for content.
+                    </p>
+                </nav>
+            </div>
+        </header>
+        <main id="main" tabindex="-1">
+            <slot />
+        </main>
+        <footer class="inverse">
+            <div class="wrapper">
+                <section class="flow" data-wrapper-type="inner">
+                    <p>Site and words by Jon Coleman, a human.</p>
+                    <p>This site is not tracking you.</p>
+                    <p><a href="#top">Back to top</a></p>
+                </section>
+            </div>
+        </footer>
+    </body>
 </html>
