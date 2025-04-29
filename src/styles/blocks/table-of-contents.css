@@ -3,5 +3,5 @@
   padding-block: var(--space-xs-s);
   padding-inline: var(--space-m-l);
   border: 1px solid;
-  border-radius: 0.75rem;
+  border-radius: 4px;
 }
