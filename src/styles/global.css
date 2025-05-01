@@ -43,6 +43,13 @@ h1 {
   text-transform: uppercase;
 }
 
+/* Accommodate very small screens */
+@media (max-width: 22rem) {
+  h1 {
+    font-size: var(--size-step-4);
+  }
+}
+
 h2 {
   font-family: Alte, serif;
   font-size: var(--size-step-2);
